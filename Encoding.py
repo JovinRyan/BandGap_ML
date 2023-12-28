@@ -37,6 +37,25 @@ def ElementEncoding(InpString: str):
     return InpString                                            #Ex Input: "H2O" Output: ["H", "2", "O"]
                                                                 #   Input: "NaOH" Output: ["Na", "O", "H"]
 
+def ParenthesesRemover(InCompound=list):
+    if "(" not in InCompound:
+        return InCompound
+        
+    else:
+        StartIndex = InCompound.index("(")
+        StopIndex = InCompound.index(")")
+        Stoich = InCompound[StopIndex+1]
+        List = InCompound[StartIndex+1:StopIndex-1]
+        for item in List:
+            if item in Elements:
+                List.insert(List.index(item)+1, Stoich)
+        InCompound[StartIndex+1:StopIndex-1] = List
+        InCompound = InCompound[:-1]
+        InCompound.remove("(")
+        InCompound.remove(")")
+
+        return InCompound
+
 def StoichEncoding(InpList: list):
     NumericList = []
     StrList = []
