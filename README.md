@@ -12,3 +12,7 @@ Losses are reported as average loss per batch, with batch size of 32 data points
 ### Data and Citations
 Band gap data compiled in /DataFiles/UpdatedMaterialsDF.csv was taken from **MaterialsProject.org** <br>
 1. Anubhav Jain, Shyue Ping Ong, Geoffroy Hautier, Wei Chen, William Davidson Richards, Stephen Dacek, Shreyas Cholia, Dan Gunter, David Skinner, Gerbrand Ceder, Kristin A. Persson; Commentary: The Materials Project: A materials genome approach to accelerating materials innovation. APL Mater. 1 July 2013; 1 (1): 011002. https://doi.org/10.1063/1.4812323
+
+<br>
+
+Elemental data used for featurization listed in /DataFiles/PeriodicTable.csv was taken from https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee
