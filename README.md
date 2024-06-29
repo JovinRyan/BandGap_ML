@@ -7,7 +7,7 @@ A simple Feed Forward Neural Network (FFNN) showed promising results in predicti
 <p align="center">
   <img src="Images/SimpleFFNN_Loss_Training1.png" alt="FFNN loss curve", width="700">
 </p>
-Losses ae reported as average loss per batch, with batch size of 32 data points.
+Losses are reported as average loss per batch, with batch size of 32 data points.
 
 ### Data and Citations
 Band gap data compiled in /DataFiles/UpdatedMaterialsDF.csv was taken from **MaterialsProject.org** <br>
